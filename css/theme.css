@@ -1,26 +1,48 @@
-@import url('https: //fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
 
-/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
-body {
+body * {
     font-family: 'Syne', sans-serif;
-    background-color: #FFFFFF;
+}
+
+body {
+    background-color: #ECE2DA;
+}
+
+.page .entry-title {
+    display: none;
+    background-color: #ECE2DA;
+}
+
+.singular .entry-header {
+    padding: 0;
+}
+
+.entry-content h2, .entry-content h3, .entry-content h4{
+    font-family: 'Syne', sans-serif;
 }
 
 /* HEADER */
 
-#site-header {
-    width: 1440px;
-    height: 80px;
-    margin: auto;
-    background: #FFFFFF;
+.header-footer-group {
+    background-color: #FFFFFF;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.header-inner {
+    padding: 0;
+    max-width: 100%;
+}
+
+.section-inner {
+    margin-right: 0;
+}
 .site-logo {
     position: absolute;
     width: 201px;
     height: 19px;
-    left: 37px;
-    top: 31px;
 }
 
 li.menu-item a {
@@ -46,12 +68,11 @@ li.menu-item.menu-item-11 a:hover {
 li.menu-item.menu-item-11 a {
     color: white !important;
     background-color: #DC9F96;
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 #site-footer {
     position: relative;
-    width: 1440px;
     height: 60px;
     padding: 20px;
     margin: auto;
@@ -63,7 +84,45 @@ li.menu-item.menu-item-11 a {
     font-weight: 400;
     font-size: 16px;
 }
+.footer-top {
+    padding: 0;
+}
+.footer-inner {
+    padding: 0;
+    max-width: 100%;
+}
 
 .footer-top.has-footer-menu {
     border: 0;
+}
+
+div.wp-block-button a {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none !important;
+    text-transform: none;
+    width: 198px;
+    height: 55px;
+    background: #E0B9B4;
+    border-radius: 5px; 
+}
+
+div.wp-block-button a:hover {
+        width: 198px;
+        height: 55px;
+        border-radius: 5px;
+        background: #C02E44;
+}
+
+figure.wp-block-image img {
+    width: 126px;
+    height: 139px;
+}
+
+.singular .entry-header .entry-content {
+    background-color: #ECE2DA;
 }
