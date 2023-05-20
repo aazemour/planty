@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
 body * {
     font-family: 'Syne', sans-serif;
@@ -125,4 +125,9 @@ figure.wp-block-image img {
 
 .singular .entry-header .entry-content {
     background-color: #ECE2DA;
+}
+
+.entry-content h2 {
+    font-weight: 800;
+    color: #3B8E46;
 }
