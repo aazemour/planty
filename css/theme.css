@@ -5,12 +5,12 @@ body * {
 }
 
 body {
-    background-color: #ECE2DA;
+    background-color: #FFFFFF;
 }
 
 .page .entry-title {
     display: none;
-    background-color: #ECE2DA;
+    background-color: #ECE2DA
 }
 
 .singular .entry-header {
@@ -118,11 +118,6 @@ div.wp-block-button a:hover {
         background: #C02E44;
 }
 
-figure.wp-block-image img {
-    width: 126px;
-    height: 139px;
-}
-
 .singular .entry-header .entry-content {
     background-color: #ECE2DA;
 }
@@ -130,4 +125,50 @@ figure.wp-block-image img {
 .entry-content h2 {
     font-weight: 800;
     color: #3B8E46;
+}
+
+/*images canette+feuilles page d'accueil*/
+
+.wp-container-1 {
+    height: 620px;
+    width: 100%;
+}
+
+.wp-image-28 {
+    position: absolute;
+    z-index: 2;
+    left: 406px;
+    top: 0;
+}
+
+.wp-image-29 {
+    position: absolute;
+    z-index: 1;
+    left: 600px;
+    top: 140px;
+}
+
+.wp-image-30 {
+    position: absolute;
+    z-index: 1;
+    left: 245px;
+    top: 140px;
+}
+
+/*Block l'énergie des plantes*/
+
+.wp-container-2 {
+    height: 415px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.wp-container-1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #ECE2DA;
+    border-radius: 0% 0% 40% 40%;
 }
