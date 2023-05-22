@@ -13,6 +13,9 @@ body {
     background-color: #ECE2DA
 }
 
+.post-inner {
+    padding : 0
+}
 .singular .entry-header {
     padding: 0;
 }
@@ -21,6 +24,9 @@ body {
     font-family: 'Syne', sans-serif;
 }
 
+.green-title {
+    color: #3B8E46;
+}
 /* HEADER */
 
 .header-footer-group {
@@ -122,36 +128,48 @@ div.wp-block-button a:hover {
     background-color: #ECE2DA;
 }
 
+.entry-content>.alignfull:not(.wp-block-group.has-background) {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 .entry-content h2 {
     font-weight: 800;
-    color: #3B8E46;
+}
+
+.title-boisson {
+    width: 100%;
+    height: auto;
+    background-color: #ECE2DA;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /*images canette+feuilles page d'accueil*/
 
 .wp-container-1 {
-    height: 620px;
+    height: 720px;
     width: 100%;
 }
 
 .wp-image-28 {
     position: absolute;
     z-index: 2;
-    left: 406px;
+    left: 926px;
     top: 0;
 }
 
 .wp-image-29 {
     position: absolute;
     z-index: 1;
-    left: 600px;
+    left: 1120px;
     top: 140px;
 }
 
 .wp-image-30 {
     position: absolute;
     z-index: 1;
-    left: 245px;
+    left: 765px;
     top: 140px;
 }
 
@@ -161,6 +179,7 @@ div.wp-block-button a:hover {
     height: 415px;
     width: 100%;
     background-color: #FFFFFF;
+   margin-bottom: 50px;
 }
 
 .wp-container-1::after {
@@ -170,5 +189,21 @@ div.wp-block-button a:hover {
     height: 100%;
     z-index: 0;
     background-color: #ECE2DA;
-    border-radius: 0% 0% 40% 40%;
+    border-radius: 0% 0% 10% 10%;
+}
+
+/* Block Les goûts*/
+
+.wp-container-gouts h2 p {
+    height: 67px;
+   
+}
+
+.wp-container-3, .wp-container-8, .wp-container-9 {
+     width: 100%;
+    background-color: #ECE2DA;
+}
+
+.wp-container-3 h2 {
+    color: #D2776A;
 }
