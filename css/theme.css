@@ -46,7 +46,6 @@ body {
     margin-right: 0;
 }
 .site-logo {
-    position: absolute;
     width: 201px;
     height: 19px;
 }
@@ -79,10 +78,13 @@ li.menu-item.menu-item-11 a {
 
 #site-footer {
     position: relative;
-    height: 60px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
     padding: 20px;
     margin: auto;
     text-align: center;
+    align-items: center;
     color: black;
     background-color: #FFFFFF !important;
     font-family: 'Syne';
@@ -90,9 +92,11 @@ li.menu-item.menu-item-11 a {
     font-weight: 400;
     font-size: 16px;
 }
+
 .footer-top {
     padding: 0;
 }
+
 .footer-inner {
     padding: 0;
     max-width: 100%;
@@ -100,6 +104,16 @@ li.menu-item.menu-item-11 a {
 
 .footer-top.has-footer-menu {
     border: 0;
+}
+
+.canettes-footer {
+    background-repeat: repeat-x;
+}
+
+.mentions {
+    display: inline-block;
+    margin-bottom: 0px;
+    padding-top: 10px;
 }
 
 div.wp-block-button a {
@@ -147,26 +161,26 @@ div.wp-block-button a:hover {
 
 /*images canette+feuilles page d'accueil*/
 
-.wp-container-1 {
+.container-canette-feuilles {
     height: 720px;
     width: 100%;
 }
 
-.wp-image-28 {
+.canette {
     position: absolute;
     z-index: 2;
     left: 926px;
     top: 0;
 }
 
-.wp-image-29 {
+.feuille-droite {
     position: absolute;
     z-index: 1;
     left: 1120px;
     top: 140px;
 }
 
-.wp-image-30 {
+.feuille-gauche {
     position: absolute;
     z-index: 1;
     left: 765px;
@@ -179,7 +193,7 @@ div.wp-block-button a:hover {
     height: 415px;
     width: 100%;
     background-color: #FFFFFF;
-   margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .wp-container-1::after {
@@ -196,14 +210,153 @@ div.wp-block-button a:hover {
 
 .wp-container-gouts h2 p {
     height: 67px;
-   
 }
 
-.wp-container-3, .wp-container-8, .wp-container-9 {
-     width: 100%;
+.title-gouts, .p-gouts{
+    z-index: 1;
+}
+
+.wp-container-image-title-gouts {
+    width: 816px;
+    height: 644px;
+}
+
+.group-1, .groupe-2, .group-3, .group-4 {
+    width: 393px;
+    height: 262px;
+}
+
+.image-gout-1 {
+    position: absolute;
+    z-index : 1;
+    left: 0px;
+    top: 0px;
+}
+
+.title-gouts-1 {
+    position: absolute;
+    z-index: 2;
+    width: 295;
+    height: 58px;
+    left: 60px;
+    top: 80px;
+}
+
+.image-gouts-2 {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 0px;
+}
+
+.title-gouts-2 {
+    position: absolute;
+    z-index: 2;
+    width: 358px;
+    height: 116px;
+    right: 20px;
+    top: 50px;
+}
+
+.image-gouts-3 {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    bottom: 0px;
+}
+
+.title-gouts-3 {
+    position: absolute;
+    z-index: 2;
+    width: 245px;
+    height: 116px;
+    left: 80px;
+    bottom: 90px;
+}
+
+.image-gouts-4 {
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    bottom: 0px;
+}
+
+.title-gouts-4 {
+    position: absolute;
+    z-index: 2;
+    width: 245px;
+    height: 116px;
+    padding-top: 40px;
+    right: 70px;
+    bottom: 100px;
+}
+
+.wp-container-gouts .wp-block-button {
+    margin-bottom: 40px;
+    z-index: 1;
+}
+/* Block témoignages*/
+
+.wp-container-testimonials {
+    height: 638px;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.wp-container-gouts::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
     background-color: #ECE2DA;
+    border-radius: 0% 0% 10% 10%;
 }
 
-.wp-container-3 h2 {
-    color: #D2776A;
+.wp-container-testimonials h2 {
+    font-size: 30px;
+}
+
+.container-groups-testimonials {
+    width: 100%;
+}
+
+.groups-testimonials {
+    width: 385px;
+    height: 139px;
+    gap: 0;
+    padding: 0px !important;
+}
+
+.image-testimonials {
+    width: 126px;
+    height: 139px;
+    margin-right: 0px !important;
+}
+
+.testimonials {
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.testimonials h3 {
+    font-size: 30px;
+    margin-top: 10px !important;
+}
+
+.testimonials p {
+    font-size: 16px;
+}
+
+@media screen {
+    .header-footer-group {
+        height: auto;
+    }
+    .header-footer-group .site-logo {
+        float: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
 }
