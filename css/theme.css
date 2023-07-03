@@ -55,7 +55,7 @@ li.menu-item a {
     font-size: 16px;
     color: black !important;
     display: inline-block;
-    padding: 30px 60px;
+    padding: 30px 25px;
     background-color: white;
     text-align: center;
     text-decoration: none !important;
@@ -64,6 +64,16 @@ li.menu-item a {
 li.menu-item a:hover{
     font-size: 13px;
     font-weight: 700;
+}
+
+.admin-menu-link {
+    font-size: 16px;
+    color: black !important;
+    display: inline-block;
+    padding: 30px 25px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none !important;
 }
 
 li.menu-item.menu-item-11 a:hover {
@@ -75,6 +85,7 @@ li.menu-item.menu-item-11 a {
     color: white !important;
     background-color: #DC9F96;
     font-weight: 700 !important;
+    padding: 30px 60px;
 }
 
 /*Footer*/
@@ -296,11 +307,10 @@ div.wp-block-button a:hover {
 .title-gouts-4 {
     position: absolute;
     z-index: 2;
-    width: 245px;
+    width: 358px;
     height: 116px;
-    padding-top: 40px;
-    right: 70px;
-    bottom: 100px;
+    right: 17px;
+    bottom: 73px;
 }
 
 .wp-container-gouts .wp-block-button {
@@ -310,8 +320,8 @@ div.wp-block-button a:hover {
 /* Block témoignages*/
 
 .wp-container-testimonials {
-    height: 638px;
-    width: 100%;
+    height: auto;
+    width: auto;
     background-color: #FFFFFF;
     margin-bottom: 50px;
 }
@@ -330,35 +340,33 @@ div.wp-block-button a:hover {
     font-size: 30px;
 }
 
-.container-groups-testimonials {
-    width: 100%;
-}
-
-.groups-testimonials {
-    width: 385px;
-    height: 139px;
-    gap: 0;
-    padding: 0px !important;
+.container-groups-testimonials .groups-testimonials {
+    width: auto;
+    height: 139px !important;
+    margin-top: 0px !important;
+    margin-bottom: 60px !important;
 }
 
 .image-testimonials {
     width: 126px;
     height: 139px;
-    margin-right: 0px !important;
 }
 
 .testimonials {
-    padding-right: 20px;
+    padding-right: 20px !important;
     margin-top: 10px;
+    width: 219px;
 }
 
 .testimonials h3 {
     font-size: 30px;
     margin-top: 10px !important;
+    margin-bottom: 0px !important;
 }
 
 .testimonials p {
-    font-size: 16px;
+    font-size: 16px !important;
+    width: 196px;
 }
 
 /*page rencontre*/
@@ -452,8 +460,8 @@ div.wp-block-button a:hover {
 
 .container-formulaire-contact {
     width: 383px !important;
-    text-align: center;
     z-index: 1;
+    align-items: center !important;
 }
 
 .container-formulaire-contact button {
@@ -461,7 +469,7 @@ div.wp-block-button a:hover {
     height: 55px;
     font-weight: 400;
     font-size: 15px !important;
-    display: inline-block;
+   
 }
 
 .feuille-formulaire img {
@@ -711,14 +719,84 @@ div.wp-block-button a:hover {
 
 /*Responsive*/
 
-@media screen {
-    .header-footer-group {
-        height: auto;
+@media screen and (max-width: 820px) {
+
+    .admin-bar-search {
+    display: none !important;
+   }
+
+    .header-inner {
+        height: 80px;
+        display: flex;
+        align-items: center;
     }
-    .header-footer-group .site-logo {
-        float: none;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: inline-block;
+
+    .toggle-text {
+        display: none;
     }
+
+    .menu-modal-inner .menu-wrapper{
+        width: 100%;
+    }
+
+    .close-nav-toggle {
+        padding: 20px 20px 20px 0px !important;
+    }
+
+    .canette {
+        position: absolute;
+        z-index: 2;
+        left: 216.5px;
+        top: 0;
+    }
+    
+    .feuille-droite {
+        position: absolute;
+        z-index: 1;
+        left: 410px;
+        top: 140px;
+    }
+    
+    .feuille-gauche {
+        position: absolute;
+        z-index: 1;
+        left: 60px;
+        top: 140px;
+    }
+
+    .wp-container-testimonials {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    .container-groups-testimonials {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    .fleur-rencontre {
+        display: none;
+    }
+
+    .feuille-equipe {
+        display: none;
+    }
+
+    .colonne-equipe {
+        gap: 100px;
+    }
+
+    .wpforms-field-name {
+        justify-content: flex-start !important;
+    }
+
+    .fond-vert {
+        display: flex;
+        justify-content: center;
+    }
+
+   .separateur {
+        width: 800px;
+        justify-content: center;
+   }
 }
