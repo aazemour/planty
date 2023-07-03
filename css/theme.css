@@ -24,6 +24,9 @@ body {
     font-family: 'Syne', sans-serif;
 }
 
+.post-meta {
+    display: none;
+}
 /* HEADER */
 
 .header-footer-group {
@@ -42,6 +45,7 @@ body {
 .section-inner {
     margin-right: 0;
 }
+
 .site-logo {
     width: 201px;
     height: 19px;
@@ -79,8 +83,9 @@ li.menu-item.menu-item-11 a {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 200px;
-    padding: 20px;
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 20px 0px;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -99,17 +104,23 @@ li.menu-item.menu-item-11 a {
 .footer-inner {
     padding: 0;
     max-width: 100%;
+    height: 0px !important;
 }
 
 .footer-top.has-footer-menu {
     border: 0;
 }
 
-.canettes-footer {
-    width: 100%;
-    background-repeat: repeat-x;
+.footer-nav-widgets-wrapper {
+    display: none;
 }
 
+.canettes-footer {
+    width: 100%;
+    height: 150px;
+    background-image: url(../canettes.png);
+    background-repeat: repeat-x;
+}
 
 .mentions {
     display: inline-block;
@@ -459,6 +470,244 @@ div.wp-block-button a:hover {
     top: 590px;
     left: 835px;
 }
+
+/*Page commander*/
+
+.fond-vert {
+    width: 100%;
+    background-color: #3B8E46 !important;
+}
+
+.fond-vert h3 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.commander {
+    font-size: 38px;
+    margin: 70px 0px 70px 0px !important;
+}
+
+.separateur {
+    border-top: 1px solid #FFFFFF;
+    width: 860px;
+}
+
+.choix {
+    width : 860px;
+}
+
+.choix img {
+    width: 192px;
+    height: 126px;
+}
+
+.choix h4 {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.image-gout {
+    justify-content: center;
+    align-items: center;
+    height: 126px;
+    flex-wrap: nowrap;
+}
+
+
+.wpcf7-text, .wpcf7-textarea, .wpcf7-number, .wpcf7-submit {
+    border-radius: 5px !important;
+}
+
+ table, td {
+    border: 0;
+ }
+
+.wpcf7-spinner {
+    display: none;
+}
+
+.formulaire-commande {
+    margin: 0px !important;
+}
+
+.wpc7-form {
+    width: 860px
+}
+
+.wpcf7-form p {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.wpcf7-form h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.bouton-commande {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 11px;
+    margin-top: 14.5px;
+}
+
+.input-box > p > span {
+        width: 82px;
+        height: 56px;
+
+        &:before {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 31px;
+            height: 27.5px;
+            color: white;
+            background-color: #DC9F96;
+            border-radius: 0px 5px 0px 0px;
+            font-size: 20px;
+            font-weight: 400;
+            content: "+";
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            pointer-events: none;
+        }
+
+        &:after {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 31px;
+            height: 27.5px;
+            color: white;
+            background-color: #DC9F96;
+            border-radius: 0px 0px 5px 0px;
+            font-size: 20px;
+            font-weight: 400;
+            content: "-";
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            pointer-events: none;
+        }
+
+        .input {
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto 40px;
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            height: 56px;
+            font: 20px "Syne";
+
+            -webkit-appearance: none;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::-webkit-inner-spin-button {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                transform: scale(5);
+                transform-origin: right center;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            &::-webkit-contacts-auto-fill-button {
+                opacity: 0;
+            }
+        }
+}
+
+.wpcf7-submit {
+    background-color: #E0B9B4 !important;
+    width: 100px;
+    height: 56px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none !important;
+}
+
+.wpcf7-form .wpcf7-submit input :hover {
+     text-decoration: none !important;
+}
+
+.border {
+    border-top: #FFFFFF 1px solid;
+    width: 860px;
+    margin-top: 30px;
+    margin-bottom: 53px;
+}
+
+.border-form h3 {
+    margin-top: 0px;
+}
+
+.wpcf7-text input {
+    margin-top: 13px;
+}
+
+.border-form .wpcf7-text {
+    width: 383px;
+    height: 71px;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    gap: 76px;
+    text-decoration: #FFFFFF;
+    margin-bottom: 30px !important;
+    margin-top: 13px;
+}
+
+.border-form td {
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.color-size-text {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.items-informations p {
+    justify-content: left;
+}
+
+.border-right {
+    border-right: #FFFFFF 1px solid;
+    height: 447px;
+}
+
+.text-livraison {
+    padding-left: 44px;
+}
+
+.items-livraison p {
+    justify-content: right;
+}
+
+.margin-bottom {
+    margin-bottom: 0px !important;
+}
+
+.submit-command input {
+    justify-content: center;
+    color: #FFFFFF !important;
+    width: 198px;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+}
+
 
 /*Responsive*/
 
