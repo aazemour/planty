@@ -778,6 +778,10 @@ div.wp-block-button a:hover {
         display: none;
     }
 
+    .rencontre-title {
+        margin-top: 0px !important;
+    }
+
     .feuille-equipe {
         display: none;
     }
@@ -786,8 +790,8 @@ div.wp-block-button a:hover {
         gap: 100px;
     }
 
-    .wpforms-field-name {
-        justify-content: flex-start !important;
+    .feuille-formulaire {
+        display: none;
     }
 
     .fond-vert {
@@ -799,4 +803,268 @@ div.wp-block-button a:hover {
         width: 800px;
         justify-content: center;
    }
+
+   .formulaire-commande .wpcf7 .wpcf7-form {
+        width: 800px;
+   }
+
+   td {
+        padding: 4.5px;
+   }
+
+   .bouton-commande {
+        margin-top: 9px;
+   }
+
+   .text-livraison {
+        padding-left: 15px;
+   }
+}
+
+@media screen and (max-width: 320px) {
+    h2 {
+        font-size: 25px;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+        .canette {
+           width: auto;
+           left: 0px;
+           margin-top: 0px !important;
+        }
+    
+        .feuille-droite {
+           display: none;
+        }
+    
+        .feuille-gauche {
+           display: none;
+        }
+
+        .container-canette-feuilles::after {
+            border-radius: 0%;        }
+
+        .wp-container-image-title-gouts {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 300px !important;
+        }
+
+           .wp-container-gouts {
+            height: 1600px !important;
+           }     
+        
+           .title-gouts {
+            margin-top: 0px !important;
+            padding-top: 0px !important;
+           }
+                .image-gout-1 {
+                    position: absolute;
+                    z-index: 1;
+                    left: 0px;
+                    top: 0px;
+                }
+        
+                .title-gouts-1 {
+                    position: absolute;
+                    z-index: 2;
+                    width: 295px;
+                    height: 58px;
+                    left: 0px;
+                    right: 0px;
+                    top: 30px;
+                    bottom: 0px;
+                    margin: 0px;
+                }
+        
+                .image-gouts-2 {
+                    position: absolute;
+                    z-index: 1;
+                    right: 0px;
+                    top: 230px;
+                }
+        
+                .title-gouts-2 {
+                    position: absolute;
+                    z-index: 2;
+                    width: 200px;
+                    height: 116px;
+                    right: 0px;
+                    left: 0px;
+                    top: 240px;
+                }
+        
+                .image-gouts-3 {
+                    position: absolute;
+                    z-index: 1;
+                    left: 0px;
+                    top: 460px ;
+                }
+        
+                .title-gouts-3 {
+                    position: absolute;
+                    z-index: 2;
+                    width: 295px;
+                    height: 116px;
+                    left: 0px;
+                    right: 0px;
+                    top: 490px;
+                }
+        
+                .image-gouts-4 {
+                    position: absolute;
+                    z-index: 1;
+                    right: 0px;
+                    top: 690px;
+                }
+        
+                .title-gouts-4 {
+                    position: absolute;
+                    z-index: 2;
+                    width: 295px;
+                    height: 116px;
+                    right: 0px;
+                    left: 0px;
+                    top: 720px;
+                }
+
+                .wp-container-gouts::after {
+                    border-radius: 0%;
+
+                }
+
+    .wp-container-gouts .wp-block-button {
+       position: absolute;
+       z-index: 10;
+       bottom: 0px;
+    }
+
+    .container-groups-testimonials {
+        width: 300px !important;
+    }
+    
+    .groups-testimonials {
+        flex-wrap: nowrap !important;
+        width: 300px !important;
+        column-gap: 5px;
+    }
+
+    .testimonials h3 {
+        margin: 0px !important;
+        font-size: 25px;
+    }
+
+    .testimonials p {
+        font-size: 14px !important;
+    }
+
+    .container-rencontre {
+        background-color: #ECE2DA;
+    }
+
+   .container-rencontre::after {
+       display: none;
+   }
+   
+   .container-rencontre {
+        width: 320px;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+   }
+
+   .rencontre-titre-texte h2 {
+        font-size: 20px;
+        width: 300px;
+   }
+
+    .rencontre-titre-texte p {
+        width: 300px;
+    }
+
+   .container-equipe {
+        height: 1300px
+   }
+
+   .container-contact {
+        width: 320px;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+   }
+
+   .container-formulaire-contact {
+        margin: 10px !important;
+   }
+
+    .fond-vert {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fond-vert h2 {
+        font-size: 25px;
+    }
+
+    .separateur {
+        width: 300px;
+        justify-content: center;
+    }
+    
+    .formulaire-commande .wpcf7 .wpcf7-form {
+        width: 300px;
+    }
+    
+    tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    td {
+        padding: 4.5px;
+    }
+    
+    .border {
+        width: 300px;
+    }
+
+    .border-form tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .border-form td {
+        width: 300px;
+    }
+
+    .border-right {
+        border-right: none;
+    }
+
+    .bouton-commande {
+        margin-top: 9px;
+    }
+
+    .text-livraison {
+        padding-left: 0px;
+    }
+
+    .text-livraison h3 {
+        margin-top: 60px;
+    }
+
+    .items-informations label, span {
+        width: 300px;
+    }
+
+    .items-livraison label, span {
+        width: 300px;
+    }
+    
+    
+    
 }
