@@ -14,10 +14,9 @@
 ?>
 <footer id="site-footer" class="header-footer-group">
 	<div class="canettes-footer">
-		<img src="wp-content/themes/Planty/canettes.png">
+
 	</div>
-	<p class="mentions">
-		Mentions légales</p>
+	<a class="mentions" href="http://localhost:8888/Planty/">Mentions légales</a>
 </footer><!-- #site-footer -->
 
 <?php wp_footer(); ?>
